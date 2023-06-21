@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'openai.apps.OpenaiConfig',
+    'geeklazy_openai.apps.GeeklazyOpenaiConfig',
 ]
 
 MIDDLEWARE = [
