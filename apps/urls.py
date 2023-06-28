@@ -17,10 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import geeklazy_openai.views
-# import geeklazy_tools.views
+import geeklazy_tools.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('openai/chat/', geeklazy_openai.views.chat),
-    # path('tools/ssr/', geeklazy_tools.views.ssr),
+    path('tools/ssr/', geeklazy_tools.views.ssr),
+    path('tools/speech2text/', geeklazy_tools.views.speech2text),
 ]
